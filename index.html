@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Conversión binario</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <style type="text/css">
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .hero {
+        height: 100vh;
+        position: relative;
+      }
+      .notification {
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+      .button {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero is-info">
+      <div class="hero-body">
+        <h1 class="title has-text-centered is-size-2">
+          Conversión de decimal a binario
+        </h1>
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="notification is-light">
+                <form action="form.py" method="post">
+              <div class="field">
+                <label class="label">Escriba el número decimal</label>
+                <p class="control">
+                  <input class="input" type="text" name="decimal" placeholder="Número decimal"/>
+                </p>
+              </div>
+              <div class="field">
+                <label class="label">Introduzca el valor del bit que desea ver</label>
+                <p class="control">
+                  <input class="input" type="text" name="valorBit" placeholder="Bit" />
+                </p>
+              </div>
+              <div class="field">
+                <label class="label">Introduzca la posición que desea ver</label>
+                <p class="control">
+                  <input class="input" type="text" name="posicion" placeholder="Posición"/>
+                </p>
+              </div>
+              <button class="button is-link" type="submit" value="Submit">Convertir</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
